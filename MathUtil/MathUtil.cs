@@ -1,5 +1,4 @@
-﻿using MaLibrairieForme;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,30 +10,19 @@ namespace MathUtil
     {
         private int _surface;
 
-        public int Surface
+        public static double SurfaceCercle(int rayon)
         {
-            get { return _surface; }
-            set { _surface = value; }
+            return Math.Pow(rayon, 2) * Math.PI;
         }
 
-        public MathUtil() : this(0)
+        public static double SurfaceCarre(int cote)
         {
-
+            return Math.Pow(cote, 2);
         }
 
-        public MathUtil(int val)
+        public static double SurfaceRectangle(int largeur, int longueur)
         {
-            _surface = val;
-        }
-
-        public int CalculSurface(Carre c)
-        {
-            return (c.Cote * c.Cote);
-        }
-
-        public int CalculSurface(Rectangle r)
-        {
-            return (r.Largeur * r.Longueur);
+            return largeur*longueur;
         }
 
         public bool VerificationValeur(int min, int max, int val)

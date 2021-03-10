@@ -44,11 +44,5 @@
     <Compile Include="MathUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MaLibrairieForme\MaLibrairieForme.csproj">
-      <Project>{FC912861-7D1A-4FF9-815A-BE20CBDCE292}</Project>
-      <Name>MaLibrairieForme</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

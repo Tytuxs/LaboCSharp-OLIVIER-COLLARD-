@@ -1,4 +1,5 @@
 ﻿using System;
+using static MathUtil.MathUtil;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -62,10 +63,15 @@ namespace MaLibrairieForme
             else
                 return false;
         }
-
+        
         public int NbSommet()
         {
             return 4;
+        }
+
+        public override double Surface()
+        {
+            return SurfaceRectangle(Largeur, Longueur);
         }
     }
 }

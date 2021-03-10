@@ -1,10 +1,10 @@
 ﻿using System;
+using static MathUtil.MathUtil;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//ToString() correct ? et du coup Affiche() aussi ?
 
 namespace MaLibrairieForme
 {
@@ -66,7 +66,10 @@ namespace MaLibrairieForme
             return this.Cote.CompareTo(autre.Cote);
         }
 
-
+        public override double Surface()
+        {
+            return SurfaceCarre(Cote);
+        }
     }
 }
 

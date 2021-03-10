@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Carre.cs" />
     <Compile Include="Cercle.cs" />
+    <Compile Include="ComparerSurface.cs" />
     <Compile Include="Coordonnees.cs" />
     <Compile Include="Forme.cs" />
     <Compile Include="FormeAbscisseComparer.cs" />
@@ -50,6 +51,12 @@
     <Compile Include="ISommets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rectangle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MathUtil\MathUtil.csproj">
+      <Project>{4ba51026-8b98-45de-ba57-6ca2273d1952}</Project>
+      <Name>MathUtil</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

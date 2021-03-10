@@ -54,6 +54,10 @@
       <Project>{FC912861-7D1A-4FF9-815A-BE20CBDCE292}</Project>
       <Name>MaLibrairieForme</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MathUtil\MathUtil.csproj">
+      <Project>{4ba51026-8b98-45de-ba57-6ca2273d1952}</Project>
+      <Name>MathUtil</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using static MathUtil.MathUtil;
 
 
 namespace MaLibrairieForme
@@ -31,5 +31,6 @@ namespace MaLibrairieForme
         public abstract void Affiche();
 
         public abstract bool CoordonneesEstDans(Coordonnees p);
+        public abstract double Surface();
     }
 }

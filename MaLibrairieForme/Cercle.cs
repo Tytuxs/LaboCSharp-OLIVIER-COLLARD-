@@ -1,4 +1,5 @@
 ﻿using System;
+using static MathUtil.MathUtil;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace MaLibrairieForme
     {
         private int _rayon;
 
-        public int rayon
+        public int Rayon
         {
             get { return _rayon; }
             set { _rayon = value; }
@@ -50,6 +51,11 @@ namespace MaLibrairieForme
                 return true;
             else
                 return false;
+        }
+
+        public override double Surface()
+        {
+            return SurfaceCercle(Rayon);
         }
     }
 }

@@ -55,6 +55,7 @@ namespace Labo1
             }
 
             Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine("Appuyer sur une touche pour lancer la liste implementant ISommet");
             Console.ReadKey();
             Console.WriteLine();
@@ -65,6 +66,7 @@ namespace Labo1
                     it.Affiche();
             }
 
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Appuyer sur une touche pour lancer la liste n'implementant pas ISommet");
             Console.ReadKey();
@@ -79,6 +81,7 @@ namespace Labo1
                     it.Affiche();
             }
 
+            Console.WriteLine();
             Console.WriteLine();
 
 
@@ -100,6 +103,7 @@ namespace Labo1
             }
 
             Console.WriteLine();
+            Console.WriteLine();
 
             //trié
             Console.WriteLine("Appuyer sur une touche pour lancer la liste de carres trie");
@@ -111,6 +115,7 @@ namespace Labo1
                 it.Affiche();
             }
 
+            Console.WriteLine();
             Console.WriteLine();
 
             //trier par ordre croissant des abscisses de position des Formes
@@ -137,6 +142,7 @@ namespace Labo1
             }
 
             Console.WriteLine();
+            Console.WriteLine();
 
             //ajout de 2 carres
             Carre carredefaut2 = new Carre();
@@ -160,17 +166,38 @@ namespace Labo1
             }
 
             Console.WriteLine();
+            Console.WriteLine();
 
             Console.WriteLine("Appuyer sur une touche pour lancer la liste de Forme");
             Console.ReadKey();
             Console.WriteLine();
             Console.WriteLine("Liste qui contient un point passe en parametre :");
 
+            foreach (Forme it in ListeForme2)
+            {
+                if(it.CoordonneesEstDans(new Coordonnees(0,0)))
+                    it.Affiche();
+            }
 
+            Console.WriteLine();
+            Console.WriteLine();
 
             //trier liste d'objets Forme sur la surface
 
+            Console.WriteLine("Appuyer sur une touche pour lancer la liste de Forme trie sur la surface");
+            Console.ReadKey();
+            Console.WriteLine();
+            Console.WriteLine("Liste trie sur la surface :");
 
+            ComparerSurface cs = new ComparerSurface();
+            ListeForme2.Sort(cs);
+
+            foreach (Forme it in ListeForme2)
+            {
+                it.Affiche();
+            }
+
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Appuyer sur une touche pour quitter");
             Console.ReadKey();
